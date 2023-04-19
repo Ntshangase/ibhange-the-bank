@@ -13,3 +13,26 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
 - build an budget tracking application 
 - assume only one user of the application.
 - allow and reflect transactions.
+
+- sprint 1 (1 day) 
+    - skeleton, 
+    - start and have a working application with basic layout.
+- sprint 2 (1 day) 
+    - design and responsive-ness, 
+    - make your skeletons come alive with css and the app should have working logic, you should be able to navigate to a different page and be able to see what that page is for.
+- sprint 3 (3 days) 
+    - functionality/api intergration
+    -  apparently the most intensive task but i need to intergrate the json data into my app at this stage, how i will do that i honestly don't know but i just know i will do it.
+    - i want to be able to see atleast the balance for the account and past transactions
+    - i need to have the extra buttons to login/logout inside the app.
+- sprint 4 (2 days)
+    - host the app on vercel
+    - comply with expectations write tests, add/view/filter transactions by credit/debit
+    - if there is still time add extras. 
+19/04
+- the hard part seems to be building with no design.
+- My approach is to use lowkey Agile development :
+    - Built the app skeleton, important pages first. landing/home
+    - the landing page will have a Login and Home button. this is to allow me to build the whole app separately and then add the login functionality later as i still have to learn about `okta`.
+- the json data contains the transactions that the customer has done and i need to pull them and display them, to do that i will need to create like a template/card then display then with ......
+

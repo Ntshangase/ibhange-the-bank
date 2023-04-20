@@ -10,6 +10,10 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
+          {/**Adding buttons to landing page */}
+          <button>Sign In</button>
+          <button>Homepage</button>
+            
           <Routes>
             <Route exact path="/" />
             <Route path="/home" element={<Homepage />} />

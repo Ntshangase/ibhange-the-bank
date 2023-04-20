@@ -1,14 +1,11 @@
 import Navbar from './Components/Navbar';
+import Homepage from './Pages/Homepage';
 
 function App() {
-  const title = "Welcome to the new blog";
-
   return (
     <div className="App">
       <Navbar />
-      <div className='content'>
-        <h1>{ title }</h1>
-      </div>
+      <Homepage />
     </div>
   );
 }

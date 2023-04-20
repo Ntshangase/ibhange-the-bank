@@ -29,6 +29,7 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
     - host the app on vercel
     - comply with expectations write tests, add/view/filter transactions by credit/debit
     - if there is still time add extras. 
+
 19/04
 - the hard part seems to be building with no design.
 - My approach is to use lowkey Agile development :
@@ -36,3 +37,5 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
     - the landing page will have a Login and Home button. this is to allow me to build the whole app separately and then add the login functionality later as i still have to learn about `okta`.
 - the json data contains the transactions that the customer has done and i need to pull them and display them, to do that i will need to create like a template/card then display then with ......
 
+20/04
+today is sprint 2.

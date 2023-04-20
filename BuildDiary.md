@@ -14,7 +14,7 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
 - assume only one user of the application.
 - allow and reflect transactions.
 
-- [ ] sprint 1 (1 day) 
+- [x] sprint 1 (1 day) 
     - skeleton, 
     - start and have a working application with basic layout.
 - [ ] sprint 2 (1 day) 

@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
   return (
@@ -10,12 +11,9 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          {/**Adding buttons to landing page */}
-          <button>Sign In</button>
-          <button>Homepage</button>
-            
+          { /**react-router for naving to different Pages */ }
           <Routes>
-            <Route exact path="/" />
+            <Route exact path="/" element={<LandingPage />} />
             <Route path="/home" element={<Homepage />} />
             <Route path="/login" element={<Login />} />
           </Routes>

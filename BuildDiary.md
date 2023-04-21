@@ -17,7 +17,7 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
 - [x] sprint 1 (1 day) 
     - skeleton, 
     - start and have a working application with basic layout.
-- [ ] sprint 2 (1 day) 
+- [x] sprint 2 (1 day) 
     - design and responsive-ness, 
     - make your skeletons come alive with css and the app should have working logic, you should be able to navigate to a different page and be able to see what that page is for.
 - [ ] sprint 3 (3 days) 

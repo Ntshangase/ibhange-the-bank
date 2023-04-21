@@ -39,3 +39,9 @@ this is suppose to be a one-week assignment. I don't know if that will be enough
 
 20/04
 today is sprint 2.
+- A huge part of me is just winging this, the plan is there but the winging is in controll.
+- I'm using experience as refrence of what best to do next.
+- It's amazing how much information is shared on error messages, *thank you* to whoever started the trend of sharing error messages.
+- the idea that a computer tells you whats wrong with your code can relatively be compared to the idea that a prophet/Isangoma/fortune-teller can tell you about what's wrong in your life, so if you can understand error messages then you should understand how prophecies work but the thing with both prophets and error messages...(I would let you build from here..)
+- i think the best ideas should copy from or be an extension of nature.
+- anouther thing taking time off screen is also an amazing debugging tool.

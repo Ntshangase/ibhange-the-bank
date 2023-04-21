@@ -45,3 +45,6 @@ today is sprint 2.
 - the idea that a computer tells you whats wrong with your code can relatively be compared to the idea that a prophet/Isangoma/fortune-teller can tell you about what's wrong in your life, so if you can understand error messages then you should understand how prophecies work but the thing with both prophets and error messages...(I would let you build from here..)
 - i think the best ideas should copy from or be an extension of nature.
 - anouther thing taking time off screen is also an amazing debugging tool.
+
+21/04
+- I have decide to study this sprint for one day they try to do it in the 2days, because if i just start now i can work myself into a whole without knowing. And i want to see if this study method will work. 

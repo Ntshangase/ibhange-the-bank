@@ -48,3 +48,10 @@ today is sprint 2.
 
 21/04
 - I have decide to study this sprint for one day they try to do it in the 2days, because if i just start now i can work myself into a whole without knowing. And i want to see if this study method will work. 
+
+22/04
+- Had to install axios since the default fetch() in react doesn't allow Cross origin request by default, basically meaning the *combos don't communicate.* 
+- cross origin resource transfer is a big deal. 
+- i think the concept of time has really changes, In my efforts to solve the error CORS policy: No 'Access-Control-Allow-Origin', i was 2minutes into a 16minutes video and, i was like i can't watch this it's too long `why did i do that?`, but maybe it was intuition because i was able to solve that error quicker in chatGPT.
+- Doing these takehome test's is a good way to learn. I need to do more.
+in my current understanding A proxy server is *upotsho*  

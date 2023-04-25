@@ -61,3 +61,6 @@ in my current understanding A proxy server is *upotsho*
     - show bank balance 
     - sort transactions by debit/credit
     - allow in-app purchase and reflect change in balance.
+
+25/04
+- Distractions.

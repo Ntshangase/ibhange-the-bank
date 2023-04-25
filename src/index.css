@@ -46,3 +46,9 @@ body {
 .login {
   align-items: center;
 }
+
+.accountData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

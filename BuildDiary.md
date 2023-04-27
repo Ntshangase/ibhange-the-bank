@@ -64,3 +64,6 @@ in my current understanding A proxy server is *upotsho*
 
 25/04
 - Distractions.
+
+27/04
+- Development has been put on hold. I have deployed V.1.0.0 which is everything I could build withen a week, But building has been nice so i want to continue but a have to complete other tasks for now and i will come back here soon.

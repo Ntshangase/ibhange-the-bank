@@ -17,16 +17,16 @@ body {
   background-color: #83edd9;
   border-bottom: 1px solid #e0e0e0;
   margin: 0 auto;
-  max-width: 600px;
+}
+@media screen and (min-width: 768px ) {
+  .navbar{
+    background-color: grey;
+  }
 }
 
-.navbar .links {
-  margin-left: auto;
-}
-
-.navbar a {
+.navbar a {   /*This is to tell compiler that we are talking about links in navbar not navbar itself.*/
   text-decoration: none;
-  margin-left: 16px;
+  margin-left: 20px;
   display: inline-block;
 }
 

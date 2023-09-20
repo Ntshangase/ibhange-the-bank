@@ -64,3 +64,10 @@ in my current understanding A proxy server is *upotsho*
 
 25/04
 - Distractions.
+
+20/09
+- I'm back.
+- this is why coding work never ends, After seeing the code i wrote, I just want to rewrite a few thing which will probably break a few thing and a 'few moments later' I'm doing a lot of things.
+- I now more javascript today then I did when i started on this project but i will try not to change everything but build on top of whats already in here.
+- For @media quiries() {} wait...`Is media quiry a function?`, but i wanted to say you can use @Media screen() or @media all(), personally i think all is vibes but i will go with screen as i assume(youtube influed assumption) that companies use screen(). ok, if looks like a function it's probably is a function @media quiries is a css function.
+- @VT was right we should delete more code. 

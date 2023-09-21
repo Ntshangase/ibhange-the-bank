@@ -11,7 +11,7 @@ function Homepage() {
         "https://raw.githubusercontent.com/bash-alt/fullstack-takehome-test/main/data.json"
       )
       .then((response) => {
-        /** console.log(response.data); */
+        // console.log(response.data); 
         setzulu(response.data);
       })
       .catch((error) => {

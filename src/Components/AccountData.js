@@ -5,6 +5,8 @@ import React, { useState } from "react";
 const AccountData = ({ zulu }) => {
   /* postOrder, cardNumber are the two arnormalies in this template,  */
   const [state, setState] = useState("");
+  console.log("below is zulu data: ");
+  console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
 
   return (
     <div>

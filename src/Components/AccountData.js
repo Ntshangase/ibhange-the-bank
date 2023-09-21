@@ -5,8 +5,11 @@ import React, { useState } from "react";
 const AccountData = ({ zulu }) => {
   /* postOrder, cardNumber are the two arnormalies in this template,  */
   const [state, setState] = useState("");
-  console.log("below is zulu data: ");
-  console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
+  // console.log("below is zulu data: ");
+  // console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
+  // the first thing is let balance be zero
+  let balance = 0.00;
+  // 1 let changesInBalances in array affect balance
 
   return (
     <div>
@@ -16,6 +19,7 @@ const AccountData = ({ zulu }) => {
             <p>Bank Name: {item.bankName}</p>
             <p> account type: {item.productName}</p>
             <p> account Number: {item.accountNumber}</p>
+            <p>Balance Amount: R{balance}</p>
             <div>{state}</div>
 
             <button // this we will use to change useState, this is what we we change to.
@@ -23,6 +27,12 @@ const AccountData = ({ zulu }) => {
                 setState(() => {
                   const eachTransaction = item.transactions.map(
                     (transaction) => {
+                      // dealing with bank balance
+                     // console.log(transaction.amount)
+                     balance = balance + transaction.amount
+                     console.log(balance)
+                     // this is alrady a loop so i don't need to lopp over it again
+
                       return (
                         <div key={transaction.id}>
                           <p>transaction type: {transaction.type}</p>

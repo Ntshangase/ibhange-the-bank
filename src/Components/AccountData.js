@@ -14,7 +14,30 @@ const AccountData = ({ zulu }) => {
             <p> account type: {item.productName}</p>
             <p> account Number: {item.accountNumber}</p>
 
-            <button>viewTransactions</button>
+            <button
+              onClick={() => {
+                const eachTransaction = item.transactions.map((transaction) => {
+                  return (
+                    <div key={transaction.id}>
+                      <p>transaction type: {transaction.type}</p>
+                      <p>transaction amount: {transaction.amount}</p>
+                      <p>
+                        transaction runningBalance: {transaction.runningBalance}
+                      </p>
+                      <p>transaction description: {transaction.description}</p>
+                    </div>
+                  );
+                });
+                return (
+                  <div>
+                    {eachTransaction}, 
+                    {console.log(eachTransaction)}
+                  </div>
+                );
+              }}
+            >
+              viewTransactions
+            </button>
           </div>
         );
       })}

@@ -75,3 +75,5 @@ in my current understanding A proxy server is *upotsho*
 - I now more javascript today then I did when i started on this project but i will try not to change everything but build on top of whats already in here.
 - For @media quiries() {} wait...`Is media quiry a function?`, but i wanted to say you can use @Media screen() or @media all(), personally i think all is vibes but i will go with screen as i assume(youtube influed assumption) that companies use screen(). ok, if looks like a function it's probably is a function @media quiries is a css function.
 - @VT was right we should delete more code. 
+21/09
+- ok after struggling for sometime, the problem i was facing is actually not a javascript problem it's a React problem. I need to display data at click of a button but for that you need `useState` which is react component.

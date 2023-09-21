@@ -3,6 +3,7 @@ import Homepage from "./Pages/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Pages/Login";
 import LandingPage from "./Pages/LandingPage";
+import Balance from "./Components/Balance";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route exact path="/" element={<LandingPage />} />
             <Route path="/home" element={<Homepage />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/balance" element={<Balance />} />
           </Routes>
         </div>
       </div>

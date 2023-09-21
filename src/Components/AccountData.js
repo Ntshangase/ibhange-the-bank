@@ -8,7 +8,7 @@ const AccountData = ({ zulu }) => {
   // console.log("below is zulu data: ");
   // console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
   // the first thing is let balance be zero
-  let balance = 0.00;
+  let balance = [];
   // 1 let changesInBalances in array affect balance
 
   return (
@@ -29,8 +29,9 @@ const AccountData = ({ zulu }) => {
                     (transaction) => {
                       // dealing with bank balance
                      // console.log(transaction.amount)
-                     balance = balance + transaction.amount
+                     balance.push(transaction.amount)
                      console.log(balance)
+                     
                      // this is alrady a loop so i don't need to lopp over it again
 
                       return (

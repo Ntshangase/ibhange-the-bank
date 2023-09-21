@@ -78,3 +78,5 @@ in my current understanding A proxy server is *upotsho*
 21/09
 - ok after struggling for sometime, the problem i was facing is actually not a javascript problem it's a React problem. I need to display data at click of a button but for that you need `useState` which is react component.
 - if someone ever tell you that I'm not good at this programming thing just know that they reaching!!!
+22/09
+- Just used the co-pilot chat feature, I'm happy its finally here.

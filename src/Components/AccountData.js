@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState }from "react";
 
 //  Since this is a template, everytime we call it somewhere eles it will render the template as is.
 
 const AccountData = ({ zulu }) => {
   /* postOrder, cardNumber are the two arnormalies in this template,  */
+  const [state, setState] = useState("");
 
   return (
     <div>
@@ -13,27 +14,30 @@ const AccountData = ({ zulu }) => {
             <p>Bank Name: {item.bankName}</p>
             <p> account type: {item.productName}</p>
             <p> account Number: {item.accountNumber}</p>
+            <div>{state}</div>
 
-            <button
+            <button // this we will use to change useState, this is what we we change to.
               onClick={() => {
-                const eachTransaction = item.transactions.map((transaction) => {
+                setState( () => {
+                  const eachTransaction = item.transactions.map((transaction) => {
+                    return (
+                      <div key={transaction.id}>
+                        <p>transaction type: {transaction.type}</p>
+                        <p>transaction amount: {transaction.amount}</p>
+                        <p>
+                          transaction runningBalance: {transaction.runningBalance}
+                        </p>
+                        <p>transaction description: {transaction.description}</p>
+                      </div>
+                    );
+                  });
                   return (
-                    <div key={transaction.id}>
-                      <p>transaction type: {transaction.type}</p>
-                      <p>transaction amount: {transaction.amount}</p>
-                      <p>
-                        transaction runningBalance: {transaction.runningBalance}
-                      </p>
-                      <p>transaction description: {transaction.description}</p>
+                    <div>
+                      {eachTransaction}, 
+                      {console.log(eachTransaction)},
                     </div>
                   );
                 });
-                return (
-                  <div>
-                    {eachTransaction}, 
-                    {console.log(eachTransaction)}
-                  </div>
-                );
               }}
             >
               viewTransactions

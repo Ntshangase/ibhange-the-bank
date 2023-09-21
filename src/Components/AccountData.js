@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 
 //  Since this is a template, everytime we call it somewhere eles it will render the template as is.
 
@@ -18,23 +18,27 @@ const AccountData = ({ zulu }) => {
 
             <button // this we will use to change useState, this is what we we change to.
               onClick={() => {
-                setState( () => {
-                  const eachTransaction = item.transactions.map((transaction) => {
-                    return (
-                      <div key={transaction.id}>
-                        <p>transaction type: {transaction.type}</p>
-                        <p>transaction amount: {transaction.amount}</p>
-                        <p>
-                          transaction runningBalance: {transaction.runningBalance}
-                        </p>
-                        <p>transaction description: {transaction.description}</p>
-                      </div>
-                    );
-                  });
+                setState(() => {
+                  const eachTransaction = item.transactions.map(
+                    (transaction) => {
+                      return (
+                        <div key={transaction.id}>
+                          <p>transaction type: {transaction.type}</p>
+                          <p>transaction amount: {transaction.amount}</p>
+                          <p>
+                            transaction runningBalance:{" "}
+                            {transaction.runningBalance}
+                          </p>
+                          <p>
+                            transaction description: {transaction.description}
+                          </p>
+                        </div>
+                      );
+                    }
+                  );
                   return (
                     <div>
-                      {eachTransaction}, 
-                      {console.log(eachTransaction)},
+                      {eachTransaction},{console.log(eachTransaction)},
                     </div>
                   );
                 });

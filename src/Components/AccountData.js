@@ -8,7 +8,8 @@ const AccountData = ({ zulu }) => {
   // console.log("below is zulu data: ");
   // console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
   // the first thing is let balance be zero
-  let balance = [];
+  // let balance = 0.00;
+  const [balance, setBalance] = useState(0.00); // when you have a hammer, everything becomes a nail.
   // 1 let changesInBalances in array affect balance
 
   return (
@@ -21,19 +22,23 @@ const AccountData = ({ zulu }) => {
             <p> account Number: {item.accountNumber}</p>
             <p>Balance Amount: R{balance}</p>
             <div>{state}</div>
+            <button onClick={() => { 
+              setBalance(() => {
+                  for (let i=0; i < item.transactions.length; i++) {
+                    let price = 0.00
+                    const value = item.transactions[i].amount;
+                    price = price + value
+                    return price // i didn't even think this was legal i just did it.
+                  }
+              })
+            }}>updateBalance</button>
 
             <button // this we will use to change useState, this is what we we change to.
               onClick={() => {
                 setState(() => {
                   const eachTransaction = item.transactions.map(
                     (transaction) => {
-                      // dealing with bank balance
-                     // console.log(transaction.amount)
-                     balance.push(transaction.amount)
-                     console.log(balance)
-                     
                      // this is alrady a loop so i don't need to lopp over it again
-
                       return (
                         <div key={transaction.id}>
                           <p>transaction type: {transaction.type}</p>
@@ -51,7 +56,7 @@ const AccountData = ({ zulu }) => {
                   );
                   return (
                     <div>
-                      {eachTransaction},{console.log(eachTransaction)},
+                      {eachTransaction}
                     </div>
                   );
                 });

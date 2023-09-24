@@ -37,6 +37,7 @@ const AccountData = ({ zulu }) => {
               <label>Type <input type="text" name="type"/> </label>
               <label>Amount <input type="number" name="amount"/> </label>
               <label>description <input type="text" name="description" /></label>
+              <button type="button" onClick={() => {console.log("submitted transaction")}}>Submitt</button>
             </form>
 
 

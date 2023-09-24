@@ -18,19 +18,25 @@ const AccountData = ({ zulu }) => {
             <p> account type: {item.productName}</p>
             <p> account Number: {item.accountNumber}</p>
             <p>Balance Amount: R{balance}</p>
-            <div>{state}</div>
-            <button onClick={() => { 
-              setBalance(() => {
+            <div>{state}</div> {/**an useless/invisible state div, they should be a better way to do this */}
+            <button onClick={() => {  // updateBalance button using state
+                  let price = 0.00;
                   for (let i=0; i < item.transactions.length; i++) {
-                    let price = 0.00
                     const value = item.transactions[i].amount;
-                    price = price + value
-                    return price // i didn't even think this was legal i just did it.
+                    // we need a if-loop to dertermine if credit or debit.
+                    if(item.transactions[i].type === "CREDIT"){
+                      price = price + value
+                    }else{price = price - value}
+                    console.log(price); 
                   }
-              })
+                  setBalance(price)
             }}>updateBalance</button>
+            {/**User transaction to increase-decrease bank balance. */}
+            {/**This should take input from user: type,amount,runningBalance,description, id(unique) */}
 
-            <button // this we will use to change useState, this is what we we change to.
+
+            {/** to display all transactions from bankAccount */}
+            <button  
               onClick={() => {
                 setState(() => {
                   const eachTransaction = item.transactions.map(
@@ -70,4 +76,4 @@ const AccountData = ({ zulu }) => {
 
 export default AccountData;
 
-// there are 5transactions here, all stored in an array containint 5 objects
+// there are 5transactions here, all stored in an array containing 5 objects

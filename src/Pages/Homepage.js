@@ -21,7 +21,7 @@ function Homepage() {
 
   return (
     <div>
-      <div>Homepage</div>
+      <div className="homepage">Homepage</div>
       {zulu && <AccountData  zulu={zulu} />}
     </div>
   );

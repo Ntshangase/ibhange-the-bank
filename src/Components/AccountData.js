@@ -5,12 +5,9 @@ import React, { useState } from "react";
 const AccountData = ({ zulu }) => {
   /* postOrder, cardNumber are the two arnormalies in this template,  */
   const [state, setState] = useState("");
-  // console.log("below is zulu data: ");
-  // console.log(zulu); // i actually have zulu-data in an array here. The next task is diplaying a balance
-  // the first thing is let balance be zero
-  // let balance = 0.00;
+  
+ // the first thing is let balance = 0.00;
   const [balance, setBalance] = useState(0.00); // when you have a hammer, everything becomes a nail.
-  // 1 let changesInBalances in array affect balance
 
   return (
     <div>

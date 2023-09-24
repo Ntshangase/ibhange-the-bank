@@ -59,11 +59,12 @@ const AccountData = ({ zulu }) => {
                       <label>
                         description <input type="text" name="description" />
                       </label>
+                      <label>
+                        Id <input type="text" name="id" />
+                      </label>
                       <button
                         type="button"
-                        onClick={() => {
-                          console.log("submitted transaction");
-                        }}
+                        onClick={() => {console.log("submited form")}}
                       >
                         Submitt
                       </button>

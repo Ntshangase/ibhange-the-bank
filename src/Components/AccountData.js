@@ -33,6 +33,11 @@ const AccountData = ({ zulu }) => {
             }}>updateBalance</button>
             {/**User transaction to increase-decrease bank balance. */}
             {/**This should take input from user: type,amount,runningBalance,description, id(unique) */}
+            <form>
+              <label>Type <input type="text" name="type"/> </label>
+              <label>Amount <input type="number" name="amount"/> </label>
+              <label>description <input type="text" name="description" /></label>
+            </form>
 
 
             {/** to display all transactions from bankAccount */}
@@ -67,6 +72,7 @@ const AccountData = ({ zulu }) => {
             >
               viewTransactions
             </button>
+            
           </div>
         );
       })}

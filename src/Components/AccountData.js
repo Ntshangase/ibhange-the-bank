@@ -5,9 +5,12 @@ import React, { useState } from "react";
 const AccountData = ({ zulu }) => {
   /* postOrder, cardNumber are the two arnormalies in this template,  */
   const [state, setState] = useState("");
-  
- // the first thing is let balance = 0.00;
-  const [balance, setBalance] = useState(0.00); // when you have a hammer, everything becomes a nail.
+
+  // the first thing is let balance = 0.00;
+  const [balance, setBalance] = useState(0.0); // when you have a hammer, everything becomes a nail.
+
+  // add transaction
+  const [addTransaction, setAddTransaction] = useState("");
 
   return (
     <div>
@@ -18,36 +21,66 @@ const AccountData = ({ zulu }) => {
             <p> account type: {item.productName}</p>
             <p> account Number: {item.accountNumber}</p>
             <p>Balance Amount: R{balance}</p>
-            <div>{state}</div> {/**an useless/invisible state div, they should be a better way to do this */}
-            <button onClick={() => {  // updateBalance button using state
-                  let price = 0.00;
-                  for (let i=0; i < item.transactions.length; i++) {
-                    const value = item.transactions[i].amount;
-                    // we need a if-loop to dertermine if credit or debit.
-                    if(item.transactions[i].type === "CREDIT"){
-                      price = price + value
-                    }else{price = price - value}
-                    console.log(price); 
+            <div>{state}</div>{" "}
+            {/**an useless/invisible state div, they should be a better way to do this */}
+            <button
+              onClick={() => {
+                // updateBalance button using state
+                let price = 0.0;
+                for (let i = 0; i < item.transactions.length; i++) {
+                  const value = item.transactions[i].amount;
+                  // we need a if-loop to dertermine if credit or debit.
+                  if (item.transactions[i].type === "CREDIT") {
+                    price = price + value;
+                  } else {
+                    price = price - value;
                   }
-                  setBalance(price)
-            }}>updateBalance</button>
+                  console.log(price);
+                }
+                setBalance(price);
+              }}
+            >
+              updateBalance
+            </button>
             {/**User transaction to increase-decrease bank balance. */}
             {/**This should take input from user: type,amount,runningBalance,description, id(unique) */}
-            <form>
-              <label>Type <input type="text" name="type"/> </label>
-              <label>Amount <input type="number" name="amount"/> </label>
-              <label>description <input type="text" name="description" /></label>
-              <button type="button" onClick={() => {console.log("submitted transaction")}}>Submitt</button>
-            </form>
-
-
+            <div>{addTransaction}</div>
+            <button
+              onClick={() => {
+                setAddTransaction(() => {
+                  return (<div>
+                    <form>
+                      <label>
+                        Type <input type="text" name="type" />{" "}
+                      </label>
+                      <label>
+                        Amount <input type="number" name="amount" />{" "}
+                      </label>
+                      <label>
+                        description <input type="text" name="description" />
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          console.log("submitted transaction");
+                        }}
+                      >
+                        Submitt
+                      </button>
+                    </form>
+                  </div>);
+                });
+              }}
+            >
+              addTransaction
+            </button>
             {/** to display all transactions from bankAccount */}
-            <button  
+            <button
               onClick={() => {
                 setState(() => {
                   const eachTransaction = item.transactions.map(
                     (transaction) => {
-                     // this is alrady a loop so i don't need to lopp over it again
+                      // this is alrady a loop so i don't need to lopp over it again
                       return (
                         <div key={transaction.id}>
                           <p>transaction type: {transaction.type}</p>
@@ -63,17 +96,12 @@ const AccountData = ({ zulu }) => {
                       );
                     }
                   );
-                  return (
-                    <div>
-                      {eachTransaction}
-                    </div>
-                  );
+                  return <div>{eachTransaction}</div>;
                 });
               }}
             >
               viewTransactions
             </button>
-            
           </div>
         );
       })}

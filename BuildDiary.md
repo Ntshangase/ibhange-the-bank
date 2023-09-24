@@ -80,3 +80,5 @@ in my current understanding A proxy server is *upotsho*
 - if someone ever tell you that I'm not good at this programming thing just know that they reaching!!!
 22/09
 - Just used the co-pilot chat feature, I'm happy its finally here.
+24/09
+- I don't like having all this code in `AccountData.js` but it's convenient.
